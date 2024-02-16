@@ -1,0 +1,86 @@
+﻿@model Application.Products.Create.Command
+
+@{
+    ViewBag.Title = "Create ";
+    Layout = "_Layout";
+}
+<div class="pagetitle">
+    <h1>Products</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item ">
+                <a asp-action="Index"> Products</a>
+
+            </li>
+            <li class="breadcrumb-item active">
+
+                Create
+            </li>
+
+        </ol>
+    </nav>
+</div>
+
+<div class="section">
+    <div class="row">
+        <div class="col-12">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Create</h5> 
+                    <!-- General Form Elements -->
+                    <form asp-action="Create" method="post" enctype="multipart/form-data">
+                        <input type="hidden" asp-for="ProductDto.Id"/>
+                        <div class="row mb-3">
+                            <label asp-for="ProductDto.Name" class="col-sm-2 col-form-label">Name</label>
+                            <div class="col-sm-10">
+                                <input asp-for="ProductDto.Name" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label asp-for="ProductDto.Price" class="col-sm-2 col-form-label">Price</label>
+                            <div class="col-sm-10">
+                                <input asp-for="ProductDto.Price" class="form-control">
+                            </div>
+                        </div>
+
+
+                        <div class="row mb-3">
+                            <label asp-for="ProductDto.Description" class="col-sm-2 col-form-label">Description</label>
+                            <div class="col-sm-10">
+                                <textarea asp-for="ProductDto.Description" class="form-control" style="height: 100px"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="ImageFile" class="col-sm-2 col-form-label">Image</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="file" asp-for="ImageFile">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label asp-for="ProductDto.CategoryId" class="col-sm-2 col-form-label">Category</label>
+                            <div class="col-sm-10">
+                                <select asp-for="ProductDto.CategoryId" class="form-select" asp-items="(List<SelectListItem>)ViewBag.Categories">
+
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label">Create</label>
+                            <div class="col-sm-10">
+                                <button type="submit" class="btn btn-primary">Create</button>
+                            </div>
+                        </div>
+
+                        <div class="alert text-danger" asp-validation-summary="All  "></div>
+                    </form><!-- End General Form Elements -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

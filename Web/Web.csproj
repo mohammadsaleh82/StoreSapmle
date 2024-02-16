@@ -1,0 +1,146 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Application\Application.csproj" />
+      <ProjectReference Include="..\Domain\Domain.csproj" />
+      <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+      <ProjectReference Include="..\Persistence\Persistence.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.2" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\css\site.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\bootstrap\LICENSE" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery-validation\LICENSE.md" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.min.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\LICENSE.txt" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\avatar.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\baner-1.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\banner-fruits.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\best-product-1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\best-product-2.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\best-product-3.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\best-product-4.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\best-product-5.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\best-product-6.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\cart-page-header-img.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\featur-1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\featur-2.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\featur-3.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\fruite-item-1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\fruite-item-2.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\fruite-item-3.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\fruite-item-4.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\fruite-item-5.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\fruite-item-6.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\hero-img-1.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\hero-img-2.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\hero-img.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\payment.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\single-item.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\testimonial-1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\vegetable-item-1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\vegetable-item-2.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\vegetable-item-3.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\vegetable-item-4.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\vegetable-item-5.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\vegetable-item-6.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\easing\easing.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\easing\easing.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\lightbox\css\lightbox.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\lightbox\images\close.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\lightbox\images\loading.gif" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\lightbox\images\next.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\lightbox\images\prev.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\lightbox\js\lightbox.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\owlcarousel\assets\ajax-loader.gif" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\owlcarousel\assets\owl.carousel.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\owlcarousel\assets\owl.carousel.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\owlcarousel\assets\owl.theme.default.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\owlcarousel\assets\owl.theme.default.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\owlcarousel\assets\owl.theme.green.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\owlcarousel\assets\owl.theme.green.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\owlcarousel\assets\owl.video.play.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\owlcarousel\LICENSE" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\owlcarousel\owl.carousel.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\owlcarousel\owl.carousel.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\waypoints\links.php" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\waypoints\waypoints.min.js" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Views\Users\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Pages\" />
+    </ItemGroup>
+
+</Project>

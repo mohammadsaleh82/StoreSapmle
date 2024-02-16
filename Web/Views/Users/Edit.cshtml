@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Microsoft.AspNetCore.Identity.IdentityRole>
+
+@{
+    ViewBag.Title = "Edit User";
+    var userRoles = (List<string>)ViewData["UserRols"];
+}
+
+
+<div class="pagetitle">
+    <h1>Users</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item ">
+                <a asp-action="Index"> Users</a>
+
+            </li>
+            <li class="breadcrumb-item active">
+
+                Edit
+            </li>
+
+        </ol>
+    </nav>
+</div>
+
+<div class="section">
+    <div class="row">
+        <div class="col-12">
+            <form method="post" asp-action="Edit">
+                <div class="card">
+                    <div class="card-body py-4">
+                        UserName is : @ViewData["UserName"]
+                        <input type="hidden" name="UserName" value="@ViewData["UserName"]">
+                        <br>
+                        <br>
+                        @foreach (var item in Model)
+                        {
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" name="Roles" type="checkbox" value="@item.Name" id="@item.Id" checked="@userRoles.Any(x => x == item.Name)">
+                                <label class="form-check-label" for="@item.Id">@item.Name</label>
+                            </div>
+                        }
+                    <div class="my-3">
+
+                            <button type="submit" class="btn btn-success">Edit</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>

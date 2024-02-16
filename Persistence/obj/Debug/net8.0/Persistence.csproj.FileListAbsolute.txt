@@ -1,0 +1,17 @@
+D:\ffff\MyProject\Portfolio\StoreSample\Persistence\bin\Debug\net8.0\Persistence.deps.json
+D:\ffff\MyProject\Portfolio\StoreSample\Persistence\bin\Debug\net8.0\Persistence.dll
+D:\ffff\MyProject\Portfolio\StoreSample\Persistence\bin\Debug\net8.0\Persistence.pdb
+D:\ffff\MyProject\Portfolio\StoreSample\Persistence\bin\Debug\net8.0\Domain.dll
+D:\ffff\MyProject\Portfolio\StoreSample\Persistence\bin\Debug\net8.0\Domain.pdb
+D:\ffff\MyProject\Portfolio\StoreSample\Persistence\obj\Debug\net8.0\Persistence.csproj.AssemblyReference.cache
+D:\ffff\MyProject\Portfolio\StoreSample\Persistence\obj\Debug\net8.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\ffff\MyProject\Portfolio\StoreSample\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfoInputs.cache
+D:\ffff\MyProject\Portfolio\StoreSample\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfo.cs
+D:\ffff\MyProject\Portfolio\StoreSample\Persistence\obj\Debug\net8.0\Persistence.csproj.CoreCompileInputs.cache
+D:\ffff\MyProject\Portfolio\StoreSample\Persistence\obj\Debug\net8.0\Persistence.csproj.CopyComplete
+D:\ffff\MyProject\Portfolio\StoreSample\Persistence\obj\Debug\net8.0\Persistence.dll
+D:\ffff\MyProject\Portfolio\StoreSample\Persistence\obj\Debug\net8.0\refint\Persistence.dll
+D:\ffff\MyProject\Portfolio\StoreSample\Persistence\obj\Debug\net8.0\Persistence.pdb
+D:\ffff\MyProject\Portfolio\StoreSample\Persistence\obj\Debug\net8.0\ref\Persistence.dll
+D:\ffff\MyProject\Portfolio\StoreSample\Persistence\bin\Debug\net8.0\Persistence.runtimeconfig.json
+D:\ffff\MyProject\Portfolio\StoreSample\Persistence\obj\Debug\net8.0\Persistence.genruntimeconfig.cache

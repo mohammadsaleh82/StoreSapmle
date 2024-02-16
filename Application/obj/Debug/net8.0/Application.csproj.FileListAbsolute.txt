@@ -1,0 +1,17 @@
+D:\ffff\MyProject\Portfolio\StoreSample\Application\bin\Debug\net8.0\Application.deps.json
+D:\ffff\MyProject\Portfolio\StoreSample\Application\bin\Debug\net8.0\Application.dll
+D:\ffff\MyProject\Portfolio\StoreSample\Application\bin\Debug\net8.0\Application.pdb
+D:\ffff\MyProject\Portfolio\StoreSample\Application\bin\Debug\net8.0\Domain.dll
+D:\ffff\MyProject\Portfolio\StoreSample\Application\bin\Debug\net8.0\Persistence.dll
+D:\ffff\MyProject\Portfolio\StoreSample\Application\bin\Debug\net8.0\Domain.pdb
+D:\ffff\MyProject\Portfolio\StoreSample\Application\bin\Debug\net8.0\Persistence.pdb
+D:\ffff\MyProject\Portfolio\StoreSample\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+D:\ffff\MyProject\Portfolio\StoreSample\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\ffff\MyProject\Portfolio\StoreSample\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+D:\ffff\MyProject\Portfolio\StoreSample\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+D:\ffff\MyProject\Portfolio\StoreSample\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+D:\ffff\MyProject\Portfolio\StoreSample\Application\obj\Debug\net8.0\Application.csproj.CopyComplete
+D:\ffff\MyProject\Portfolio\StoreSample\Application\obj\Debug\net8.0\Application.dll
+D:\ffff\MyProject\Portfolio\StoreSample\Application\obj\Debug\net8.0\refint\Application.dll
+D:\ffff\MyProject\Portfolio\StoreSample\Application\obj\Debug\net8.0\Application.pdb
+D:\ffff\MyProject\Portfolio\StoreSample\Application\obj\Debug\net8.0\ref\Application.dll
